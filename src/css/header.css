@@ -1,0 +1,32 @@
+/****
+ * Header
+ */
+header a, header a:hover { color: var(--h1-main); }
+header.change a, header.change a:hover { color: var(--h1-main-dark); }
+
+header { position: fixed; top: 0px; left: 0; width: 100%; height: 64px; z-index: 1000; transition: .2s; }
+
+header .menu { position: absolute; top: 32px; font-size: 0px; right: 72px; transition: .2s; }
+header .menu li { display: inline-block; font-size: 19px; line-height: 19px; margin: 0px 16px; text-align: center; padding: 4px 0px; color: #444; letter-spacing: 2px; }
+header .menu li a { transition: .2s; padding: 0; font-family: "coverfont"; }
+
+header.change { top: 0; transition: .2s; box-shadow: 0 0 4px 0 #444; background-color: #FBFBFB; }
+header.change .menu { top: 18px; transition: .2s; }
+header.change .menu li a { transition: .2s; }
+
+header a { text-decoration: none; }
+header .logo { position: absolute; top: 24px; left: 24px; padding-left: 54px; transition: .2s; }
+header .logo:before { position: absolute; display: inline-block; width: 42px; height: 42px; left: 0; background-size: 100% 100%; content: ''; transition: .2s; }
+header .logo:before { background-image: url('icon/globe-logo-light.png'); }
+header .logo span { font-size: 19px; line-height: 19px; margin: 0; font-family: "coverfont"; display: block;}
+header .logo span:nth-child(2) { letter-spacing: 4px; }
+
+header.change .logo { margin-top: -8px; padding-left: 42px; }
+header.change .logo:before { position: absolute; display: inline-block; width: 32px; height: 32px; left: 0; background-size: 100% 100%; content: ''; }
+header.change .logo:before { background-image: url('icon/globe-logo-dark.png'); }
+header.change .logo span { font-size: 15px; line-height: 15px; }
+header.change .logo span:nth-child(2) { letter-spacing: 2px; }
+
+@media only screen and (max-width: 520px) {
+  header .logo {display: none; }
+}
