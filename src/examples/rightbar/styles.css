@@ -1,0 +1,30 @@
+/****
+ * General styling
+ */
+:root {
+  --light-blue: #268BFF;
+  --broken-white: #F8F8FB;
+  --h1-main: #F8F8FB;
+  --blue: #71C2FF;
+  --green: #00CC11;
+  --orange: #FF782B;
+  --purple: #AE70FF;
+  --yellow: #FFD314;
+}
+
+a:hover { text-decoration: none; }
+body { background-color: var(--light-blue); overflow-y: scroll; position: relative; }
+@font-face { font-family: 'coverfont'; src: url('Brandon_bld.otf') format('opentype'); }
+@font-face { font-family: 'titlefont'; src: url('BebasNeue-Regular.otf') format('opentype'); }
+@font-face{ font-family:'typefont'; src:url('Tox Typewriter.ttf') format('truetype'); }
+
+section { padding: 92px 0; margin: 0 auto 0; max-width: 100%; position: relative; width: 1200px; }
+
+.wrapper { background-color: #EEE; padding-left: 0; position: relative; overflow: hidden; }
+.wrapper.toggled { padding-right: 250px; }
+
+#sidebar { position: relative; width: 100%; height: 100%; background: #000; }
+.wrapper.toggled #sidebar { position: absolute; top: 0; right: 0; width: 250px; }
+
+#content { width: 100%; min-height: 100vh; padding: 20px; position: relative; }
+.wrapper.toggled #content { position: relative; margin-right: 0; }
