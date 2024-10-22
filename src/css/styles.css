@@ -20,5 +20,7 @@ body { /*background-color: var(--broken-white);*/ overflow-y: scroll; position: 
 @font-face{ font-family:'typefont'; src:url('Tox Typewriter.ttf') format('truetype'); }
 
 .wrapper { margin: 0 auto 0; max-width: 100%; position: relative; width: 1200px; }
+.wrapper ul { color: var(--green); font-size: 23px; }
+.wrapper li a { color: var(--green); }
 
 section { padding: 92px 0; min-height: 100vh; background-color: rgba(61,61,61,1); }

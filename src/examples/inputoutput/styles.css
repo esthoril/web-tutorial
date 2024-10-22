@@ -1,0 +1,22 @@
+/****
+ * General styling
+ */
+:root {
+  --light-blue: #268BFF;
+  --broken-white: #F8F8FB;
+  --h1-main: #F8F8FB;
+  --blue: #71C2FF;
+  --green: #00CC11;
+  --orange: #FF782B;
+  --purple: #AE70FF;
+  --yellow: #FFD314;
+}
+
+a:hover { text-decoration: none; }
+body { background-color: var(--broken-white); overflow-y: scroll; position: relative; }
+@font-face { font-family: 'coverfont'; src: url('/css/Brandon_bld.otf') format('opentype'); }
+@font-face { font-family: 'titlefont'; src: url('/css/BebasNeue-Regular.otf') format('opentype'); }
+@font-face{ font-family:'typefont'; src:url('/css/Tox Typewriter.ttf') format('truetype'); }
+
+main { padding: 92px 0; margin: 0 auto 0; max-width: 100%; position: relative; width: 1200px; }
+.wrapper { padding-left: 0; position: relative; overflow: hidden; }
